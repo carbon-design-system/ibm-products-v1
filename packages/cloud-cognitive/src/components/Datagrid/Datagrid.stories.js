@@ -52,29 +52,24 @@ const defaultHeader = [
     accessor: (row, i) => i,
     sticky: 'left',
     id: 'rowIndex', // id is required when accessor is a function.
-    minWidth: 50,
   },
   {
     Header: 'First name',
     accessor: 'firstName',
-    minWidth: 50,
   },
   {
     Header: 'Last name',
     accessor: 'lastName',
-    minWidth: 50,
   },
   {
     Header: 'Age',
     accessor: 'age',
     width: 50,
-    minWidth: 50,
   },
   {
     Header: 'Visits',
     accessor: 'visits',
     width: 60,
-    minWidth: 50,
   },
   {
     Header: 'Status',
@@ -88,17 +83,14 @@ const defaultHeader = [
   {
     Header: 'Someone 1',
     accessor: 'someone1',
-    minWidth: 50,
   },
   {
     Header: 'Someone 2',
     accessor: 'someone2',
-    minWidth: 50,
   },
   {
     Header: 'Someone 3',
     accessor: 'someone3',
-    minWidth: 50,
   },
   {
     Header: 'Someone 4',
@@ -107,7 +99,6 @@ const defaultHeader = [
   {
     Header: 'Someone 5',
     accessor: 'someone5',
-    minWidth: 50,
   },
   {
     Header: 'Someone 6',
@@ -116,7 +107,6 @@ const defaultHeader = [
   {
     Header: 'Someone 7',
     accessor: 'someone7',
-    minWidth: 50,
   },
   {
     Header: 'Someone 8',
@@ -125,12 +115,10 @@ const defaultHeader = [
   {
     Header: 'Someone 9',
     accessor: 'someone9',
-    minWidth: 50,
   },
   {
     Header: 'Someone 10',
     accessor: 'someone10',
-    minWidth: 50,
   },
 ];
 
