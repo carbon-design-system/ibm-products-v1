@@ -32,9 +32,13 @@ export let InlineEdit = forwardRef(({ v2, ...rest }, ref) => {
   return <InlineEditV1 {...props} />;
 });
 
-InlineEdit = pkg.checkComponentEnabled(InlineEdit, componentName);
+InlineEdit.deprecated = {
+  details: `The InlineEdit component is being renamed to EditInPlace in the next major version of @carbon/ibm-products. You can prepare by updating your usage of InlineEdit to EditInPlace.`,
+  level: 'warn',
+};
 
 InlineEdit.displayName = componentName;
+InlineEdit = pkg.checkComponentEnabled(InlineEdit, componentName);
 
 InlineEdit.propTypes = {
   v2: PropTypes.bool,

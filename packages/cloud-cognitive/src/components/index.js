@@ -73,7 +73,9 @@ export {
   useSelectAllWithToggle,
   useColumnOrder,
   useInlineEdit,
+  useEditableCell,
   useFiltering,
+  getAutoSizedColumnWidth,
 } from './Datagrid';
 export { EditTearsheet } from './EditTearsheet';
 export { EditTearsheetNarrow } from './EditTearsheetNarrow';
@@ -81,4 +83,5 @@ export { EditFullPage } from './EditFullPage';
 export { EditUpdateCards } from './EditUpdateCards';
 
 export { InlineEdit } from './InlineEdit';
+export { EditInPlace } from './EditInPlace';
 export { NonLinearReading } from './NonLinearReading';

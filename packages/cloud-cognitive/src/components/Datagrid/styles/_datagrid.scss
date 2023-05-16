@@ -436,7 +436,7 @@
   position: relative;
   width: 100%;
   max-height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .#{$block-class}__carbon-row-expanded {
@@ -630,4 +630,8 @@
 .#{$block-class} .#{$block-class}__selected-header {
   background-color: $hover-selected-ui;
   user-select: none;
+}
+
+.#{$block-class} .#{$pkg-prefix}--datagrid__head-wrap {
+  background-color: $ui-03;
 }

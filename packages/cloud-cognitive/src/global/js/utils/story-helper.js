@@ -70,7 +70,7 @@ export const prepareStory = (template, options) => {
  */
 export const CodesandboxLink = ({ exampleDirectory }) => (
   <a
-    href={`https://codesandbox.io/s/github/carbon-design-system/ibm-cloud-cognitive/tree/main/examples/carbon-for-ibm-products/${exampleDirectory}`}
+    href={`https://codesandbox.io/s/github/carbon-design-system/ibm-cloud-cognitive/tree/main_v1/examples/carbon-for-ibm-products/${exampleDirectory}`}
   >
     <img
       alt="Edit on CodeSandbox"
@@ -83,4 +83,15 @@ CodesandboxLink.propTypes = {
    * directory withing examples codesandbox will be found
    */
   exampleDirectory: PropTypes.string,
+};
+
+/**
+ * A helper function that finds the designated theme on the Storybook canvas.
+ * @returns "dark" or "light"
+ */
+export const getSelectedCarbonTheme = () => {
+  const themeId = document
+    .querySelector('html')
+    .getAttribute('storybook-carbon-theme');
+  return themeId === 'g90' || themeId === 'g100' ? 'dark' : 'light';
 };
